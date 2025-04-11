@@ -45,7 +45,7 @@ while True:
         if len(listaFiltrada) == 0:
             print("Não temos nenhuma manifestação desse tipo cadastrada no sistema")
         else:
-            print(f"\nLista de manifestações do tipo '{tipo}':\n")
+            print(f"\nLista de manifestações do tipo '{tipoFiltrado}':\n")
             for item in listaFiltrada:
                 print(f"[{item[0]}] {item[2]} → {item[3]}: {item[1]}")
 
