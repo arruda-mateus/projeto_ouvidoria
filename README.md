@@ -19,3 +19,20 @@ Este é um sistema simples de **ouvidoria universitária**, desenvolvido em Pyth
 
 ## 📂 Estrutura do Projeto
 
+## 🗃️ Banco de Dados
+
+Certifique-se de ter um banco MySQL com a seguinte base e tabela:
+
+### Banco: `ouvidoriabd`
+
+### Tabela: `comentarios`
+```sql
+CREATE TABLE comentarios (
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
+    descricao TEXT NOT NULL,
+    autor VARCHAR(100),
+    ouvidor VARCHAR(100),
+    tipo VARCHAR(50)
+);
+
+
